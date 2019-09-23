@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingRight="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.purify.prefence.purifySeekBar android:id="@id/miui_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="center" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+</LinearLayout>

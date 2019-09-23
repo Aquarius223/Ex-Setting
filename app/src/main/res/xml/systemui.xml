@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="locale"
+    android:title="通知栏设置">
+    <PreferenceCategory
+        android:key="systemui"
+        android:title="状态栏">
+        <com.miui.purify.prefence.purifyCheckBox
+            reset="reboot"
+            android:defaultValue="0"
+            android:key="status_hide"
+            android:title="自动隐藏" />
+        <com.miui.purify.prefence.purifyList
+            android:defaultValue="0"
+            android:entries="@array/bar_style_mode"
+            android:entryValues="@array/bar_style_value"
+            android:key="bar_style"
+            android:summary="%s"
+            android:title="状态栏样式" />
+    </PreferenceCategory>
+</PreferenceScreen>

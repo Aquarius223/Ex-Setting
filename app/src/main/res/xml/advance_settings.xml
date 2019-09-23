@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:layoutDirection="locale" android:title="EX Tools">
+    <PreferenceCategory android:title="自定义设置">
+        <Preference android:title="通知栏设置">
+            <intent android:action="android.intent.action.MAIN" android:targetClass="com.miui.purify.SecondActivity" android:targetPackage="com.miui.purify">
+                <extra android:name="key" android:value="systemui"/>
+            </intent>
+        </Preference>
+
+        <com.miui.purify.prefence.purifySeekBarPreference max="480" min="300" step="5" android:defaultValue="440" android:key="density_set" android:summary="当前DPI:%s" android:title="密度调节"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="黑域补丁">
+        <com.miui.purify.prefence.purifyCheckBox android:defaultValue="0" android:key="brevent_active" android:title="激活" reset="recovery"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="系统优化">
+        <PreferenceScreen android:key="syslite" android:title="系统精简" android:summary="移除系统中非关键应用"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="其他">
+        <com.miui.purify.prefence.purifyEditText android:title="系统名称" android:key="romname" android:summary="Device Name:%s"/>
+        <Preference android:summary="开启手机极致省电模式" android:title="极致省电">
+            <intent android:targetClass="com.miui.powerkeeper.ui.ExtremePowerEntryActivity" android:targetPackage="com.miui.powerkeeper"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
